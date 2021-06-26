@@ -1,1 +1,13 @@
-/*  Add your styling here */
+/*1st-grid*/
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.column{
+    padding: 6px;
+}
+.column img{
+    width: 150px;
+    height: 150px;
+}
