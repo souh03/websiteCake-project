@@ -7,25 +7,99 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
- 
-<section class="1st-grid">
-    <div class="row">
-        <div class="column">
-<img src="C:\Users\saido\Documents\migracode\Cake-groupProject\img\1stimg.jpg" alt="">
-        </div>
-        <div class="column">
-<img src="C:\Users\saido\Documents\migracode\Cake-groupProject\img\2ndimg.jpg"  alt="">
-        </div>
+ <header>
+     <div class=header-container>
+ <div class="logo">
+ <img src="https://i.ibb.co/gPNk3CL/cake-with-swirls-and-stars-8708ld.png" alt="">
+ </div>
+ <P class="header-text">The best cakes in town delivered to your door</P>
+ </div>
 
+
+ <div class="mobile-container">
+
+    
+    <div class="topnav">
+      <a href="#home" class="active"></a>
+      <div id="myLinks">
+        <a href="">HOME</a>
+        <a href="">CAKES</a>
+        <a href="">ORDERIN</a>
+        <a href="">LESSONS</a>
+        <a href="">ABOUT</a>
+      </div>
+     
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+    </div>
+    <div class="nav-links">
+        <a href="">HOME</a>
+        <a href="">CAKES</a>
+        <a href="">ORDERIN</a>
+        <a href="">LESSONS</a>
+        <a href="">ABOUT</a>
+      </div>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    
+</header>
 
+ <main>
+<section class="welcome">
+     <div class="welcome-text">
+    <H1>Welcome</H1>
+    <p class="welcome-text-para"> we are preparing cakes because it's somebody's birthday somewhere, 
+    so just keep calm and eat a cake because you can't be sad when you're eating a cake.
+    
+ </p>
+    </div>
+   <div>
+    <img src="https://i.ibb.co/ckLvKn6/calum-lewis-rk-T-TG5-NKF8-unsplash.jpg" alt="">
+   </div>
+</section >
+    
+ <section class="cockies" >
+<div class="cockies">
+<img class="img-cockies" src="https://i.ibb.co/q7cHK1w/brooke-lark-V4-MBq8kue3-U-unsplash.jpg" alt="">
+</div>
+<div class="cockies">
+<img class="img-cockies" src="https://i.ibb.co/yXnwMFp/anthony-espinosa-6iqp-LKqea-E0-unsplash.jpg"  alt="">
+</div>
+<img class="img-cockies" src="https://i.ibb.co/CbqvXBj/kim-daniels-Ork-Eas-Je-Y74-unsplash.jpg" alt="">
+<div class="cockies"> 
+<img class="img-cockies" src="https://i.ibb.co/0DxdB4g/food-photographer-jennifer-pallian-8-Jg4-U4x-Hu-o-unsplash.jpg"  alt="">
+</div>   
+    
 </section>
 
+</main>
+<footer>
+    <h2>Contact us: </h2>
+    <div class="social-icons">
+    <ul >
+        <a class ="email" href=""target="_blank"> <i class="fa fa-envelope"></i></a>
+        <a  class="facebook"href=""target="_blank"><i class="fa fa-facebook"></i></a>
+        <a class="phone"href=""target="_blank"><i class="fa fa-phone" ></i></a>    
+    </ul>
+    <h3> © all rights reserved </h3>
+</div>
+</footer>
 
 </body>
 
-</html>
+</html

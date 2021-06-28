@@ -1,13 +1,202 @@
-/*1st-grid*/
-.row{
+
+html, body {
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+  }
+  
+  /* header */
+
+.header-container{
+    background-color: #fbf5f6;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px 5px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    margin-right: 30px;
+}
+.header-text{
+ 
+   
+    font-weight: lighter;
+    position: relative;
+    top: 60px;
+}
+/** HAMBURGER MENU**/
+
+  .topnav {
+    overflow: hidden;
+    background-color:none;
+    position: relative;
+    bottom: 150px ;
+    
+  }
+  .topnav a {
+    
+    color: gray;
+    padding: 18px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+ .nav-links{
+      display: none;
+  }
+
+
+/* section welcome*/
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
+.welcome img{
+    width: 300px;
+    height: 300px;
+}
+
+
+/*section cockies*/
+.cockies{
     display:flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
 }
-.column{
-    padding: 6px;
+.img-cockies{
+    height: 140px;
+    width: 140px;
+    padding: 5px;
 }
-.column img{
-    width: 150px;
-    height: 150px;
+
+/**footer**/
+
+footer h3{
+    text-align: center;
+    position: relative;
+    left: 20px;
 }
+footer{
+    background-color: #fbf5f6;
+}
+ footer ul{
+     display:flex;
+     flex-direction:column ;
+ }
+
+
+/*****media querie****/
+
+
+@media(min-width:620px){
+    .logo img{
+    height: 200px;
+    width: 200px;
+    }
+    .header-text{
+     font-size: medium;   
+    position: relative ;
+    top: 110px;
+    }
+    h1{
+        position: relative;
+        top:-30px;
+        left: 200px ;
+        
+    }
+   .welcome{
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .welcome img{
+       width:500px ;
+   }
+  
+.img-cockies{
+    height: 400px;
+    width: 250px;
+}
+.topnav a{
+    display:none;
+    
+}
+.topnav a.icon {
+    display: none;
+}
+header .nav-links{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.nav-links a{
+    color: black;
+    text-decoration: none;
+   background-color:#fbf5f6;
+   padding: 6px 13px;
+   position: relative;
+   top: 10px;
+   cursor: pointer;
+}
+
+.nav-links  a+a{
+    margin-left: 20px;
+}
+footer h2{
+      text-align: center; 
+      position: relative; 
+      left: 20px;
+}
+footer ul{
+    display: inline;
+}
+.social-icons{
+    text-align: center;
+
+}
+.social-icons a+a{
+    margin-left: 20px;}
+}
+
+
+@media(min-width:1056px){
+.logo img{
+    margin-right:400px;
+}
+h1{
+    position: relative;
+    top:-50px;
+    left: 400px ;
+    
+}
+.header-text{
+position: relative;
+    top: 100px;
+
+}
+.img-cockies{
+    height: 400px;
+    width: 300px;
+
+}
+}
+@media (min-width: 1280px){
+
+    .img-cockies{
+        height: 400px;
+        width: 300px;
+    
+    }
+}
+    
